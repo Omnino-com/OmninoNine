@@ -1,0 +1,14 @@
+{
+  "name": "omninonine",
+  "version": "1.0.0",
+  "description": "Driver, tools and Companion module for the Cloud9 Technologies Button Board",
+  "scripts": {
+    "package": "scripts/package-companion.sh"
+  },
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "node-hid": "^3.4.0"
+  },
+  "private": true
+}

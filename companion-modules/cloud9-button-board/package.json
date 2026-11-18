@@ -1,0 +1,25 @@
+{
+	"name": "companion-surface-cloud9-button-board",
+	"version": "0.1.0",
+	"private": true,
+	"main": "dist/main.js",
+	"type": "module",
+	"scripts": {
+		"build": "tsc -p tsconfig.build.json",
+		"dev": "tsc -p tsconfig.build.json --watch",
+		"test": "tsc -p tsconfig.json && node --test \".test-build/src/__tests__/*.test.js\""
+	},
+	"license": "MIT",
+	"engines": {
+		"node": "^22.21 || ^26.5"
+	},
+	"dependencies": {
+		"@companion-surface/base": "~1.4.1",
+		"cloud9-button-board": "file:../../lib",
+		"node-hid": "^3.4.0"
+	},
+	"devDependencies": {
+		"@types/node": "^22.19.3",
+		"typescript": "~5.9.3"
+	}
+}

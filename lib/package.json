@@ -1,0 +1,9 @@
+{
+	"name": "cloud9-button-board",
+	"version": "0.1.0",
+	"private": true,
+	"description": "Protocol encoders and decoders for the Cloud9 Button Board (model 0301)",
+	"main": "protocol.js",
+	"types": "protocol.d.ts",
+	"license": "MIT"
+}

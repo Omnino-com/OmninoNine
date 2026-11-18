@@ -1,0 +1,7 @@
+# Cloud9 Technologies Button Board (model 0301): let non-root programs such as
+# Companion open it.
+#
+#   sudo cp 50-cloud9-button-board.rules /etc/udev/rules.d/
+#   sudo udevadm control --reload-rules && sudo udevadm trigger
+SUBSYSTEM=="usb", ATTRS{idVendor}=="2c82", ATTRS{idProduct}=="012d", MODE:="0666"
+KERNEL=="hidraw*", ATTRS{idVendor}=="2c82", ATTRS{idProduct}=="012d", MODE:="0666"
