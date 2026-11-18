@@ -19,9 +19,12 @@ board, so the USB protocol was worked out by probing it. See
 
 ## Using the board with Companion
 
-Get the release zip and follow the `README.md` inside it. It's the same file as
-[packaging/README.md](packaging/README.md). The module loads into Companion 5.1+ as a
-developer module.
+**[Download the latest zip from the Releases page](https://github.com/Omnino-com/OmninoNine/releases/latest)**
+(`OmninoNine-cloud9-companion-v<version>.zip`), unzip it, and follow the `README.md`
+inside. It's the same file as [packaging/README.md](packaging/README.md).
+
+The module loads into Companion 5.1+ as a developer module. Everything it needs is
+in the zip, so there's nothing else to install.
 
 ## Building the release zip
 
@@ -38,6 +41,12 @@ This builds and tests the module, then writes
 `release/OmninoNine-cloud9-companion-v<version>.zip`. To release a new version, bump
 `version` in both `companion-modules/cloud9-button-board/package.json` and
 `companion/manifest.json`. The script stops if the two don't match.
+
+To publish it on the Releases page:
+
+```sh
+gh release create v<version> release/OmninoNine-cloud9-companion-v<version>.zip
+```
 
 ## Working on the module
 

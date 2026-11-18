@@ -127,10 +127,13 @@ module folder when starting it:
 
 ## Updating
 
-Replace the `cloud9-button-board` folder inside `companion-modules` with the one from
-the new zip. Companion watches the folder and restarts the module by itself. If it
+Download the newest zip from
+https://github.com/Omnino-com/OmninoNine/releases/latest, then replace the
+`cloud9-button-board` folder inside `companion-modules` with the one from the new zip. Companion watches the folder and restarts the module by itself. If it
 doesn't, restart Companion.
 
-## Source
+## Downloads, source and issues
 
-https://github.com/Omnino-com/OmninoNine
+- Latest version: https://github.com/Omnino-com/OmninoNine/releases/latest
+- Source code: https://github.com/Omnino-com/OmninoNine
+- Report a problem: https://github.com/Omnino-com/OmninoNine/issues
